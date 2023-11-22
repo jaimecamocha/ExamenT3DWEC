@@ -5,7 +5,7 @@
 import { Ball, random } from "./balls.js";
 import { width, height, ctx } from "./canvas_setup.js";
 
-//metemos las bolas en el array
+//metemos las bolas que vamos generando en el array
 const balls = [];
 
 while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
