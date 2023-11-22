@@ -1,5 +1,5 @@
 // JAIME FERNÁNDEZ CALVO
-//
+// https://github.com/jaimecamocha/ExamenT3DWEC.git
 
 //importamos
 import { ctx, width, height } from "./canvas_setup.js";
@@ -13,7 +13,7 @@ export class Ball {
         this.velY = velY;
         this.color = randomRGB();
         this.size = size;
-    }
+    } 
  
     draw() {
         ctx.beginPath();

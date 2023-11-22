@@ -1,5 +1,5 @@
 // JAIME FERNÁNDEZ CALVO
-//
+// https://github.com/jaimecamocha/ExamenT3DWEC.git
 
 //sacamos el ancho y el alto de la pantalla
 export const canvas = document.querySelector('canvas');
