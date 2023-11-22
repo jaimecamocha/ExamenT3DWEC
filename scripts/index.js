@@ -1,9 +1,11 @@
 // JAIME FERNÁNDEZ CALVO
 //
 
-import { Ball, random, randomRGB } from "./balls.js";
+//importamos
+import { Ball, random } from "./balls.js";
 import { width, height, ctx } from "./canvas_setup.js";
 
+//metemos las bolas en el array
 const balls = [];
 
 while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
@@ -19,6 +21,8 @@ while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
     balls.push(ball);
 }
 
+
+//recorremos el array mostrando las bolas en el lienzo
 function loop() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; //FALLO: cambiamos el color del fondo a negro
     ctx.fillRect(0, 0, width, height);

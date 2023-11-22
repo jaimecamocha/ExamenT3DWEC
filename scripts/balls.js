@@ -1,8 +1,10 @@
 // JAIME FERNÁNDEZ CALVO
 //
 
+//importamos
 import { ctx, width, height } from "./canvas_setup.js";
 
+//creamos la clase que crea las bolas
 export class Ball {
     constructor(x, y, velX, velY, size) { 
         this.x = x;
@@ -44,10 +46,13 @@ export class Ball {
     }
 }
 
+//funcion para crear números random
 export function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
+//función para crear colores random
 export function randomRGB() {
     return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }

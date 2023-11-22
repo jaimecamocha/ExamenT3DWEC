@@ -1,7 +1,7 @@
 // JAIME FERNÁNDEZ CALVO
 //
 
-
+//sacamos el ancho y el alto de la pantalla
 export const canvas = document.querySelector('canvas');
 export const ctx = canvas.getContext('2d');
 
