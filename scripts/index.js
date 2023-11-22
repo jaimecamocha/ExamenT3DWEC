@@ -16,12 +16,11 @@ function randomRGB() {
 }
 
 class Ball {
-    constructor(x, y, velX, velY, color, size) { // FALLO: añadimos el color al constructor
+    constructor(x, y, velX, velY, size) { 
         this.x = x;
         this.y = y;
         this.velX = velX;
         this.velY = velY;
-        this.color = color;
         this.size = size;
     }
 
