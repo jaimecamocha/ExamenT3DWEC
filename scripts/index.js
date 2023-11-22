@@ -1,7 +1,10 @@
+// JAIME FERNÁNDEZ CALVO
+//
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
-const width = canvas.width = window.innerHeight;
+const width = canvas.width = window.innerWidth; //FALLO: necesitamos 'innerWidth' para sacar el ancho de la página
 const height = canvas.height = window.innerHeight;
 
 function random(min, max) {
@@ -13,19 +16,19 @@ function randomRGB() {
 }
 
 class Ball {
-    constructor(x, y, velX, velY, size) {
+    constructor(x, y, velX, velY, color, size) { // FALLO: añadimos el color al constructor
         this.x = x;
         this.y = y;
         this.velX = velX;
         this.velY = velY;
-        this.color = randomRGB();
+        this.color = color;
         this.size = size;
     }
 
     draw() {
         ctx.beginPath();
         ctx.fillStyle = this.color;
-        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI());
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI); //FALLO: corregimos Math.PI 
         ctx.fill();
     }
 
@@ -55,7 +58,7 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 4) {
+while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
     const size = random(10, 20);
     const ball = new Ball(
         random(0 + size, width - size),
@@ -69,7 +72,7 @@ while (balls.length < 4) {
 }
 
 function loop() {
-    ctx.fillStyle = 'rgba(0, 245, 0, 0.25)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; //FALLO: cambiamos el color del fondo a negro
     ctx.fillRect(0, 0, width, height);
 
     for (const ball of balls) {
