@@ -20,7 +20,7 @@ while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
   
     balls.push(ball);
 }
-
+ 
 
 //recorremos el array mostrando las bolas en el lienzo 
 function loop() {
