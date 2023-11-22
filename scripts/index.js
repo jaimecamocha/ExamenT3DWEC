@@ -22,7 +22,7 @@ while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
 }
 
 
-//recorremos el array mostrando las bolas en el lienzo
+//recorremos el array mostrando las bolas en el lienzo 
 function loop() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; //FALLO: cambiamos el color del fondo a negro
     ctx.fillRect(0, 0, width, height);
