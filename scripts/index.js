@@ -66,7 +66,7 @@ while (balls.length < 25) { // ATENCIÓN: cambiamos el número de bolas
         random(-7, 7),
         size
     );
-
+ 
     balls.push(ball);
 }
 
@@ -82,7 +82,7 @@ function loop() {
                 ball.collisionDetect(otherBall);
             }
         }
-    }
+    } 
 
     requestAnimationFrame(loop);
 }
