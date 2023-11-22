@@ -24,7 +24,7 @@ class Ball {
         this.velY = velY;
         this.size = size;
     }
-
+ 
     draw() {
         ctx.beginPath();
         ctx.fillStyle = this.color;
