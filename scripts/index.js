@@ -15,6 +15,7 @@ function randomRGB() {
     return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+
 class Ball {
     constructor(x, y, velX, velY, size) { 
         this.x = x;
